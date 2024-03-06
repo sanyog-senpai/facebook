@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Site Prototype</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f2b5cc5b49.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="img/logo.png" class="logo" alt="" />
+        <ul>
+          <li><img src="img/notification.png" alt="" /></li>
+          <li><img src="img/inbox.png" alt="" /></li>
+          <li><img src="img/video.png" alt="" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="img/search.png" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="img/profile-pic.png" alt="" />
+        </div>
+      </div>
+       <!---------------- Settings Menu Starts from here ---------------->
+      <div class="settings-menu">
+
+        <div id="dark-btn">
+            <span></span>
+        </div>
+
+          <div class="settings-menu-inner">
+              <div class="user-profile">
+                  <img src="img/profile-pic.png" />
+                  <div>
+                    <p>John Nicholson</p>
+                    <a href="#">See your Profile</a>
+                  </div>
+              </div>
+              <hr>
+              <div class="user-profile">
+                  <img src="img/feedback.png" />
+                  <div>
+                    <p>Give Feedback</p>
+                    <a href="#">Help us to improve the new design</a>
+                  </div>
+              </div>
+              <hr>
+              <div class="setting-links">
+                  <img src="img/setting.png" class="settings-icon">
+                  <a href="#">Settings & Privacy <img src="img/arrow.png" width="10px">
+                  </a>
+              </div>
+              <div class="setting-links">
+                <img src="img/help.png" class="settings-icon">
+                <a href="#">Help & Support <img src="img/arrow.png" width="10px">
+                </a>
+            </div>
+            <div class="setting-links">
+                <img src="img/display.png" class="settings-icon">
+                <a href="#">Logout <img src="img/arrow.png" width="10px">
+                </a>
+            </div>
+            <div class="setting-links">
+                <img src="img/logout.png" class="settings-icon">
+                <a href="#">Display & Accessability <img src="img/arrow.png" width="10px">
+                </a>
+            </div>
+          </div>
+      </div>
+
+    </nav>
+
+    <div class="container">
+      <!---------------- Left Sidebar Starts from here ---------------->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"><img src="img/news.png" alt="" />Latest News</a>
+          <a href="#"><img src="img/friends.png" alt="" />Friends</a>
+          <a href="#"><img src="img/group.png" alt="" />Group</a>
+          <a href="#"><img src="img/marketplace.png" alt="" />Marketplace</a>
+          <a href="#"><img src="img/watch.png" alt="" />Watch</a>
+          <a href="#">See More</a>
+        </div>
+        <div class="shortcut-links">
+          <p>Your Shortcuts</p>
+          <a href="#"><img src="img/shortcut-1.png" />Web Developers</a>
+          <a href="#"><img src="img/shortcut-2.png" />Web Design Course</a>
+          <a href="#"
+            ><img src="img/shortcut-3.png" />Full Stack Developement</a
+          >
+          <a href="#"><img src="img/shortcut-4.png" />Website Experts</a>
+        </div>
+      </div>
+      <!---------------- Main Content Starts from here ---------------->
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="img/upload.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <img src="img/member-1.png" />
+            <p>Alison</p>
+          </div>
+          <div class="story story3">
+            <img src="img/member-2.png" />
+            <p>Jackson</p>
+          </div>
+          <div class="story story4">
+            <img src="img/member-3.png" />
+            <p>Samona</p>
+          </div>
+          <div class="story story5">
+            <img src="img/member-4.png" />
+            <p>John Doe</p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="img/profile-pic.png" />
+            <div>
+              <p>John Nicholson</p>
+              <small>Public <i class="fas fa-sort-down"></i></small>
+            </div>
+          </div>
+
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind, John?"
+            ></textarea>
+            <div class="add-post-links">
+              <a href="#"><img src="img/live-video.png" />Live Video</a>
+              <a href="#"><img src="img/photo.png" />Photo/Video</a>
+              <a href="#"><img src="img/feeling.png" />Feeling/Activity</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-rows">
+            <div class="user-profile">
+              <img src="img/profile-pic.png" />
+              <div>
+                <p>John Nicholson</p>
+                <span>Januaty 22 2021, 13:40</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Get daily updates on my youtube channel <span>@Kagami's World</span>
+            <a href="#">#Hello World</a>
+            <a href="#">#Youtube Channel</a>
+          </p>
+          <img src="img/feed-image-1.png" class="post-img" />
+
+          <div class="post-rows">
+            <div class="activity-icons">
+              <div><img src="img/like-blue.png" />120</div>
+              <div><img src="img/comments.png" />50</div>
+              <div><img src="img/share.png" />10</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="img/profile-pic.png" /><i class="fas fa-sort-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+            <div class="post-rows">
+              <div class="user-profile">
+                <img src="img/profile-pic.png" />
+                <div>
+                  <p>Jonathan Brown</p>
+                  <span>January 22 2021, 13:40</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+  
+            <p class="post-text">
+              Chillin with friends 
+              <a href="#">#Vacation</a>
+              <a href="#">#Friendship Goals</a>
+            </p>
+            <img src="img/feed-image-2.png" class="post-img" />
+  
+            <div class="post-rows">
+              <div class="activity-icons">
+                <div><img src="img/like.png" />135</div>
+                <div><img src="img/comments.png" />25</div>
+                <div><img src="img/share.png" />5</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="img/profile-pic.png" /><i class="fas fa-sort-down"></i>
+              </div>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post-rows">
+              <div class="user-profile">
+                <img src="img/profile-pic.png" />
+                <div>
+                  <p>Chris Evans</p>
+                  <span>January 22 2021, 13:40</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+  
+            <p class="post-text">
+              Friendship helps you heal your pain
+              <a href="#">#Streets</a>
+              <a href="#">#Friendship Goals</a>
+              <a href="#">#Childhood Friends</a>
+            </p>
+            <img src="img/feed-image-3.png" class="post-img" />
+  
+            <div class="post-rows">
+              <div class="activity-icons">
+                <div><img src="img/like.png" />1250</div>
+                <div><img src="img/comments.png" />25</div>
+                <div><img src="img/share.png" />5</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="img/profile-pic.png" /><i class="fas fa-sort-down"></i>
+              </div>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post-rows">
+              <div class="user-profile">
+                <img src="img/profile-pic.png" />
+                <div>
+                  <p>Jonathan Brown</p>
+                  <span>January 22 2021, 13:40</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+  
+            <p class="post-text">
+              Chillin with friends 
+              <a href="#">#Vacation</a>
+              <a href="#">#Friendship Goals</a>
+            </p>
+            <img src="img/feed-image-5.png" class="post-img" />
+  
+            <div class="post-rows">
+              <div class="activity-icons">
+                <div><img src="img/like.png" />135</div>
+                <div><img src="img/comments.png" />25</div>
+                <div><img src="img/share.png" />5</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="img/profile-pic.png" /><i class="fas fa-sort-down"></i>
+              </div>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post-rows">
+              <div class="user-profile">
+                <img src="img/profile-pic.png" />
+                <div>
+                  <p>Jonathan Brown</p>
+                  <span>January 22 2021, 13:40</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+  
+            <p class="post-text">
+              Chillin with friends 
+              <a href="#">#Vacation</a>
+              <a href="#">#Friendship Goals</a>
+            </p>
+            <img src="img/feed-image-4.png" class="post-img" />
+  
+            <div class="post-rows">
+              <div class="activity-icons">
+                <div><img src="img/like.png" />135</div>
+                <div><img src="img/comments.png" />25</div>
+                <div><img src="img/share.png" />5</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="img/profile-pic.png" /><i class="fas fa-sort-down"></i>
+              </div>
+            </div>
+        </div>
+
+        <button class="load-more-btn" type="button">Load More</button>
+
+      </div>
+      <!-------------- Right Sidebar Starts from here -------------->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="right-event">
+            <h4>Social Media</h4>
+            <p><i class="fas fa-map-marker-alt"></i>Willson Texh Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>22</h3>
+            <span>July</span>
+          </div>
+          <div class="right-event">
+            <h4>Mobile Marketing</h4>
+            <p><i class="fas fa-map-marker-alt"></i>Willson Texh Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <img src="img/advertisement.png" class="sidebar-ads" />
+
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="img/member-1.png" />
+          </div>
+          <p>Alison Mina</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="img/member-2.png" />
+          </div>
+          <p>Jackson Aston</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="img/member-3.png" />
+          </div>
+          <p>Samona Rose</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2021 - Kagami's Life</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
